@@ -19,7 +19,7 @@
 
 #define DATA_FLASH_OFFSET  						(0x7C00)
 
-#define DATA_FLASH_AMOUNT						(36)
+#define DATA_FLASH_AMOUNT						(48)
 #define DATA_FLASH_PAGE  						(2)
 
 typedef enum
@@ -32,6 +32,8 @@ typedef enum{
 	flag_UART_TX_Finish = 0 ,	
 	flag_UART_RX_Finish , 	
 	flag_Record_Data ,
+	flag_Write_Data ,
+
 
 	flag_DEFAULT	
 }Flag_Index;
@@ -118,47 +120,63 @@ void GPIO_Init (void)
     GPIO_SetMode(PB, BIT14, GPIO_MODE_OUTPUT);
 }
 
-void Emulate_EEPROM_Process(void)
+void Emulate_EEPROM_WriteTest(void)
 {
-	static uint8_t incr_base = 0;
 	uint8_t cnt = 0;
 	uint8_t i = 0;
+	static uint8_t incr_base = 0;
+	
+	for (i = 0 ; i < DATA_FLASH_AMOUNT; i ++)
+	{
+		Write_Data(i%DATA_FLASH_AMOUNT, incr_base + (cnt++) );
+	}
+
+	incr_base++;	//incr_base += 0x10;
+
+	/* Disable FMC ISP function */
+	FMC_Close();
+
+	/* Lock protected registers */
+	SYS_LockReg();
+}
+
+void Emulate_EEPROM_ReadTest(void)
+{
+	uint8_t i = 0;
+	uint8_t cnt = 0;
+
+	for (i = 0 ; i < DATA_FLASH_AMOUNT; i ++)
+	{
+		Read_Data(i%DATA_FLASH_AMOUNT, &cnt );
+		printf("0x%2X , ", cnt);
+		if ((i+1)%8 ==0)
+		{
+			printf("\r\n");
+		}
+	}
+}
+
+void Emulate_EEPROM_Process(void)
+{
 	uint8_t string[] = "\r\nEmulate_EEPROM_Process finish !\r\n\r\n" ; 
 
 	if (is_flag_set(flag_Record_Data))
 	{
 		set_flag(flag_Record_Data , DISABLE);
 
-		for (i = 0 ; i < DATA_FLASH_AMOUNT; i ++)
-		{
-			Write_Data(i%DATA_FLASH_AMOUNT, incr_base + (cnt++) );
-		}
-
-		/* Disable FMC ISP function */
-		FMC_Close();
-
-		/* Lock protected registers */
-		SYS_LockReg();
-
-		/* Test Read_Data() */
-
-		for (i = 0 ; i < DATA_FLASH_AMOUNT; i ++)
-		{
-
-			Read_Data(i%DATA_FLASH_AMOUNT, &cnt );
-			printf("0x%2X , ", cnt);
-			if ((i+1)%8 ==0)
-			{
-				printf("\r\n");
-			}
-
-		}
-
-		incr_base += 0x10;
+		Emulate_EEPROM_ReadTest();
 		
 		UART_Write(UART0 , string , strlen((char*)string) );
-
 	}
+
+	if (is_flag_set(flag_Write_Data))
+	{
+		set_flag(flag_Write_Data , DISABLE);
+
+		Emulate_EEPROM_WriteTest();
+	}
+
+	
 }
 
 void Emulate_EEPROM(void)
@@ -297,19 +315,27 @@ void UART0_Init(void)
 void TMR1_IRQHandler(void)
 {
 //	static uint32_t LOG = 0;
-	static uint16_t CNT = 0;
+	static uint16_t CNT_read = 0;
+	static uint16_t CNT_write = 0;
+
 	
     if(TIMER_GetIntFlag(TIMER1) == 1)
     {
         TIMER_ClearIntFlag(TIMER1);
 
-		if (CNT++ >= 1000)
+		if (CNT_read++ >= 1)
 		{		
-			CNT = 0;
+			CNT_read = 0;
 //        	printf("%s : %4d\r\n",__FUNCTION__,LOG++);
 			PB14 ^= 1;	
 			set_flag(flag_Record_Data , ENABLE);
-		}		
+		}
+
+		if (CNT_write++ >= 1)
+		{		
+			CNT_write = 0;
+			set_flag(flag_Write_Data , ENABLE);
+		}	
     }
 }
 

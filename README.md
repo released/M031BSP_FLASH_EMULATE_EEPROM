@@ -8,7 +8,7 @@ update @ 2020/06/18
 
 - with 2 pages (for backup each other) , refer to DATA_FLASH_PAGE define
 
-- and expected EEPROM adddress total : 36 bytes , refer to DATA_FLASH_AMOUNT
+- and expected EEPROM adddress total : 48 bytes , refer to DATA_FLASH_AMOUNT
 
 - data flash address set to 0x7C00 , refer to DATA_FLASH_OFFSET
 
