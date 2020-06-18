@@ -323,7 +323,7 @@ void TMR1_IRQHandler(void)
     {
         TIMER_ClearIntFlag(TIMER1);
 
-		if (CNT_read++ >= 1)
+		if (CNT_read++ >= 500)
 		{		
 			CNT_read = 0;
 //        	printf("%s : %4d\r\n",__FUNCTION__,LOG++);
@@ -331,7 +331,7 @@ void TMR1_IRQHandler(void)
 			set_flag(flag_Record_Data , ENABLE);
 		}
 
-		if (CNT_write++ >= 1)
+		if (CNT_write++ >= 500)
 		{		
 			CNT_write = 0;
 			set_flag(flag_Write_Data , ENABLE);
