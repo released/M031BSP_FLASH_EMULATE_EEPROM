@@ -1,0 +1,1 @@
+fromelf --text -c ".\obj\@L.axf" --output ".\obj\@L.txt"
