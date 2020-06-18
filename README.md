@@ -16,6 +16,6 @@ update @ 2020/06/18
 
 - below is EEPROM write and read data log for reference 
 
-![image](https://github.com/released/M031BSP_FLASH_EMULATE_EEPROM/blob/master/SampleCode/Template/log.jpg)
+![image](https://github.com/released/M031BSP_FLASH_EMULATE_EEPROM/blob/master/log.jpg)
 
-![image](https://github.com/released/M031BSP_FLASH_EMULATE_EEPROM/blob/master/SampleCode/Template/KEIL_memory1_memory2_0x7C00.jpg)
+![image](https://github.com/released/M031BSP_FLASH_EMULATE_EEPROM/blob/master/KEIL_memory1_memory2_0x7C00.jpg)
