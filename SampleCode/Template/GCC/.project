@@ -150,6 +150,11 @@
 			<locationURI>PARENT-3-PROJECT_LOC/Library/StdDriver/src/wwdt.c</locationURI>
 		</link>
 		<link>
+			<name>User/EEPROM_Emulate.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/EEPROM_Emulate.c</locationURI>
+		</link>
+		<link>
 			<name>User/main.c</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/main.c</locationURI>

@@ -44,7 +44,7 @@ all: Template.elf secondary-outputs
 Template.elf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Cross ARM GNU C Linker'
-	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -T "D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC\..\..\..\Library\Device\Nuvoton\M031\Source\GCC\gcc_arm.ld" -Xlinker --gc-sections -Wl,-Map,"Template.map" --specs=nano.specs -o "Template.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -T "D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC\..\..\..\Library\Device\Nuvoton\M031\Source\GCC\gcc_arm.ld" -Xlinker --gc-sections -Wl,-Map,"Template.map" --specs=nano.specs -o "Template.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

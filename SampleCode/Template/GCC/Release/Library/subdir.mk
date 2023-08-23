@@ -4,27 +4,27 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/acmp.c \
-D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/adc.c \
-D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/clk.c \
-D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/crc.c \
-D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/ebi.c \
-D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/fmc.c \
-D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/gpio.c \
-D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/i2c.c \
-D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/pdma.c \
-D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/pwm.c \
-D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/retarget.c \
-D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/spi.c \
-D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/sys.c \
-D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/timer.c \
-D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/uart.c \
-D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/usbd.c \
-D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/usci_i2c.c \
-D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/usci_spi.c \
-D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/usci_uart.c \
-D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/wdt.c \
-D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/wwdt.c 
+D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/acmp.c \
+D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/adc.c \
+D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/clk.c \
+D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/crc.c \
+D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/ebi.c \
+D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/fmc.c \
+D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/gpio.c \
+D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/i2c.c \
+D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/pdma.c \
+D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/pwm.c \
+D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/retarget.c \
+D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/spi.c \
+D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/sys.c \
+D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/timer.c \
+D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/uart.c \
+D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/usbd.c \
+D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/usci_i2c.c \
+D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/usci_spi.c \
+D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/usci_uart.c \
+D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/wdt.c \
+D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/wwdt.c 
 
 OBJS += \
 ./Library/acmp.o \
@@ -74,150 +74,150 @@ C_DEPS += \
 
 
 # Each subdirectory must supply rules for building sources it contributes
-Library/acmp.o: D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/acmp.c
+Library/acmp.o: D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/acmp.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM GNU C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/.." -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Library/adc.o: D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/adc.c
+Library/adc.o: D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/adc.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM GNU C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/.." -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Library/clk.o: D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/clk.c
+Library/clk.o: D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/clk.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM GNU C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/.." -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Library/crc.o: D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/crc.c
+Library/crc.o: D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/crc.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM GNU C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/.." -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Library/ebi.o: D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/ebi.c
+Library/ebi.o: D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/ebi.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM GNU C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/.." -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Library/fmc.o: D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/fmc.c
+Library/fmc.o: D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/fmc.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM GNU C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/.." -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Library/gpio.o: D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/gpio.c
+Library/gpio.o: D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/gpio.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM GNU C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/.." -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Library/i2c.o: D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/i2c.c
+Library/i2c.o: D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/i2c.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM GNU C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/.." -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Library/pdma.o: D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/pdma.c
+Library/pdma.o: D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/pdma.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM GNU C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/.." -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Library/pwm.o: D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/pwm.c
+Library/pwm.o: D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/pwm.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM GNU C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/.." -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Library/retarget.o: D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/retarget.c
+Library/retarget.o: D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/retarget.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM GNU C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/.." -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Library/spi.o: D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/spi.c
+Library/spi.o: D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/spi.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM GNU C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/.." -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Library/sys.o: D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/sys.c
+Library/sys.o: D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/sys.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM GNU C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/.." -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Library/timer.o: D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/timer.c
+Library/timer.o: D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/timer.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM GNU C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/.." -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Library/uart.o: D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/uart.c
+Library/uart.o: D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/uart.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM GNU C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/.." -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Library/usbd.o: D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/usbd.c
+Library/usbd.o: D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/usbd.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM GNU C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/.." -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Library/usci_i2c.o: D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/usci_i2c.c
+Library/usci_i2c.o: D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/usci_i2c.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM GNU C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/.." -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Library/usci_spi.o: D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/usci_spi.c
+Library/usci_spi.o: D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/usci_spi.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM GNU C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/.." -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Library/usci_uart.o: D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/usci_uart.c
+Library/usci_uart.o: D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/usci_uart.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM GNU C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/.." -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Library/wdt.o: D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/wdt.c
+Library/wdt.o: D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/wdt.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM GNU C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/.." -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Library/wwdt.o: D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/Library/StdDriver/src/wwdt.c
+Library/wwdt.o: D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/Library/StdDriver/src/wwdt.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM GNU C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_ADC_ModifiedMovingAverage/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/CMSIS/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/Device/Nuvoton/M031/Include" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/../../../Library/StdDriver/inc" -I"D:/SourceCode/_Avery_M031/M031BSP_FLASH_EMULATE_EEPROM/SampleCode/Template/GCC/.." -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

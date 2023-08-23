@@ -126,6 +126,12 @@ void Emulate_EEPROM_WriteTest(void)
 	uint8_t i = 0;
 	static uint8_t incr_base = 0;
 	
+	SYS_UnlockReg();
+
+	/* Enable FMC ISP function */
+	FMC_Open();
+    FMC_ENABLE_AP_UPDATE();
+	
 	for (i = 0 ; i < DATA_FLASH_AMOUNT; i ++)
 	{
 		Write_Data(i%DATA_FLASH_AMOUNT, incr_base + (cnt++) );
@@ -133,6 +139,7 @@ void Emulate_EEPROM_WriteTest(void)
 
 	incr_base++;	//incr_base += 0x10;
 
+    FMC_DISABLE_AP_UPDATE();
 	/* Disable FMC ISP function */
 	FMC_Close();
 
@@ -145,6 +152,11 @@ void Emulate_EEPROM_ReadTest(void)
 	uint8_t i = 0;
 	uint8_t cnt = 0;
 
+	SYS_UnlockReg();
+
+	/* Enable FMC ISP function */
+	FMC_Open();
+	
 	for (i = 0 ; i < DATA_FLASH_AMOUNT; i ++)
 	{
 		Read_Data(i%DATA_FLASH_AMOUNT, &cnt );
@@ -154,6 +166,13 @@ void Emulate_EEPROM_ReadTest(void)
 			printf("\r\n");
 		}
 	}
+	
+	/* Disable FMC ISP function */
+	FMC_Close();
+
+	/* Lock protected registers */
+	SYS_LockReg();
+	
 }
 
 void Emulate_EEPROM_Process(void)
